@@ -19,6 +19,7 @@ Our team name is [Dodo Cafe](https://github.com/DodoCafe).
 * [106590040 温致綱](https://github.com/gougon)
 * [106590048 陳風平](https://github.com/phogbinh)
 * [106590026 高楷杰](https://github.com/mdvv85009)
+* 106590018 廖彥澤 (Contract)
 
 ### Collaboration Story
 Currently N/A.
