@@ -1,6 +1,6 @@
 # Dodo Gallery
 ## Motivation
-The world is moving fast, and so are we. With it, incredible civilization succeeds. But with it, spiritual values are left behind. Family, considered the vital part of our life, is no doubt victim of the fast-moving modern world. *Dodo Gallery* was created to solve this problem. By letting each and every person go through three stages of interactive experience, the project aims to remind the user of his family, urging him/her to take action and spend time to what is meant to value most.
+The world is moving fast, and so are we. With it, incredible civilization succeeds. But with it, spiritual value's left behind. Family, considered vital part of our life, is no doubt victim of the fast-moving modern world. *Dodo Gallery* was created to solve this problem. By letting each and every person go through three stages of interactive experience, the project aims to remind the user of family, urging him/her to take action and spend time to what is meant to value most.
 
 ## About
 *Dodo Gallery* is a collaborated graduation project of six undergraduates from two departments of National Taipei University of Technology:
