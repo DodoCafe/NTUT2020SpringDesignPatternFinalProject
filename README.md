@@ -25,10 +25,25 @@ Our team name is [Dodo Cafe](https://github.com/DodoCafe).
 Currently N/A.
 
 ### Interactive Experiences
-Currently N/A.
+Our main presentation method is to use the projection screen to project 3 pictures, just like a gallery.
+* **First picture**<br>
+When user walk close to the picture, the cellphone will start ring. Then user can pick up the cellphone and listen to the phonograph.  When the phonograph finished, the picture enter standby screen.
+* **Second picture**<br>
+User can use walking device(pressure sensor/macky macky) to moving for 15 seconds. After 15 seconds, the picture shows slogan and moving speed decrease to 0 in 5 seconds and enter standby screen.
+* **Third picture**<br>
+The picture is the foggy window. User can use hand to wipe the window.
 
 ### Implementation
-Currently N/A.
+Our main platform is PC and other device(pressure detect device, cellphone, infrared detect device, Kinect...).
+* **Firsr picture**<br>
+We use infrared detect user's entering and inform the cellphone. The cellphone then start ringing. After user pick up the phone and listen to the phonograph, the cellphone will inform the PC. Then, PC goes to the second picture.
+* **Second picture**<br>
+When the first picture end, the second picture shows up. The picture prompts the user to tread on the walking device(pressure sensor/macky macky) which under his feet. User can move by tread the walking device, then computer will start count for 15 seconds. After 15 seconds, the picture shows slogan and moving speed decrease to 0 in 5 seconds and enter standby screen.
+* **Third picture**<br>
+When second picture over, the third picture start. We use Kinect to implement touch detection within a certain distance of the projection screen. User use this technic to wipe the fog out.
+* **The skill in whole experience**<br>
+We use face emotion recognition to dynamically detect user's emotion. Next picture will be affected by user's emotion.
+
 #### Technologies
 Currently N/A.
 
