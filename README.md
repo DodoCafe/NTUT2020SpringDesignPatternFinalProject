@@ -7,7 +7,7 @@ The world is moving fast, and so are we. With it, incredible civilization succee
 * Department of Interaction Design
 * Department of Computer Science and Information Technology
 
-The project was initiated in September 2019 and is expected to end in October 2020.
+The project was initiated in September 2019 and is expected to end in June 2021.
 ### Our Team
 Our team name is [Dodo Cafe](https://github.com/DodoCafe).
 #### Department of Interaction Design
@@ -35,7 +35,7 @@ The picture is the foggy window. User can use hand to wipe the window.
 
 ### Implementation
 Our main platform is PC and other device(pressure detect device, cellphone, infrared detect device, Kinect...).
-* **Firsr picture**<br>
+* **First picture**<br>
 We use infrared detect user's entering and inform the cellphone. The cellphone then start ringing. After user pick up the phone and listen to the phonograph, the cellphone will inform the PC. Then, PC goes to the second picture.
 * **Second picture**<br>
 When the first picture end, the second picture shows up. The picture prompts the user to tread on the walking device(pressure sensor/macky macky) which under his feet. User can move by tread the walking device, then computer will start count for 15 seconds. After 15 seconds, the picture shows slogan and moving speed decrease to 0 in 5 seconds and enter standby screen.
