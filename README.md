@@ -46,13 +46,18 @@ We use face emotion recognition to dynamically detect user's emotion. Next pictu
 
 #### Technologies
 * **Android Unity Communication**<br>
+We use Socket to accomplish this feature. The server and client use particular message to inform each other.
 * **Kinect Depth Trigger**<br>
+We use Kinect to get depth information and use median filter to reduce the noise.
 * **3D FER**<br>
+We use Kernel method + SVM and LSTM to recognize emotion.
 * **Resperry Pi Infrared Sensing**<br>
 * **Resperry Pi Pressure Sensing**<br>
 
 #### Design Patterns
-Currently N/A.
+* **Observer**<br>
+1.  In Android Unity Communication, we use Observer to inform the main thread instead ckeck each update
+
 
 ### Contributions
 Currently N/A.
