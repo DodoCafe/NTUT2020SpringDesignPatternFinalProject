@@ -56,7 +56,7 @@ We use Kernel method + SVM and LSTM to recognize emotion.
 
 #### Design Patterns
 * **Observer**<br>
-1.  In Android Unity Communication, we use Observer to inform the main thread instead ckeck each update
+    1.  In Android Unity Communication, we use Observer to inform the main thread instead ckeck each update
 
 
 ### Contributions
