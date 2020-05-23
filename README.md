@@ -45,7 +45,11 @@ When second picture over, the third picture start. We use Kinect to implement to
 We use face emotion recognition to dynamically detect user's emotion. Next picture will be affected by user's emotion.
 
 #### Technologies
-Currently N/A.
+* **Android Unity Communication**<br>
+* **Kinect Depth Trigger**<br>
+* **3D FER**<br>
+* **Resperry Pi Infrared Sensing**<br>
+* **Resperry Pi Pressure Sensing**<br>
 
 #### Design Patterns
 Currently N/A.
