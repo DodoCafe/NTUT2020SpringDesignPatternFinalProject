@@ -55,13 +55,22 @@ We use Kernel method + SVM and LSTM to recognize emotion.
 * **Resperry Pi Pressure Sensing**<br>
 
 #### Design Patterns
+* **MVC**
+    * We use this pattern in whole project
+    * Motivation : We want to decoupling classes, keep code clean, and easy to read
+    * Solution : MVC can accomplish these all factors
+    * Consequence : 
+        * Easy to maintain
+        * Decoupling classes
+        * The code need to go through multiple layer from base class to view
+        * Decrease the efficiency
 * **Android Unity Communication**
     1.  Observer
         * Motivation : We need a mechanism to that socket thread inform main thread what message it receive
         * Solution : Observer can avoid main thread busy wating
         * Consequense : 
             * Avoid busy waiting
-            * Follow by MVC pattern, the observer need to go through many layer
+            * Follow by MVC pattern, the observer need to go through multiple layer and generate readers and news
 
 
 ### Contributions
