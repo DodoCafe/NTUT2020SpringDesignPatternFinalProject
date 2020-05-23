@@ -55,8 +55,13 @@ We use Kernel method + SVM and LSTM to recognize emotion.
 * **Resperry Pi Pressure Sensing**<br>
 
 #### Design Patterns
-* **Observer**<br>
-    1.  In Android Unity Communication, we use Observer to inform the main thread instead ckeck each update
+* **Android Unity Communication**
+    1.  Observer
+        * Motivation : We need a mechanism to that socket thread inform main thread what message it receive
+        * Solution : Observer can avoid main thread busy wating
+        * Consequense : 
+            * Avoid busy waiting
+            * Follow by MVC pattern, the observer need to go through many layer
 
 
 ### Contributions
