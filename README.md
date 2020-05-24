@@ -71,6 +71,15 @@ We use Kernel method + SVM and LSTM to recognize emotion.
         * Consequense : 
             * Avoid busy waiting
             * Follow by MVC pattern, the observer need to go through multiple layer and generate readers and news
+* **Unity**
+    1.  State
+        * Motivation：We want the state of process can dynamic transfer to another
+        * Solution：State can help us transfer the state of interactive process easily.
+        * Consequense：
+            * Easy to manage code in each state
+            * Easy to change the transitions of each state
+            * Need to control the amount of state, because each addtional state must add a new class
+            * Hard to limit "How to use" in program, each developer of group must follow the state machine rules.
 
 
 ### Contributions
