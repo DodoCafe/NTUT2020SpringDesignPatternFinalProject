@@ -74,18 +74,18 @@ We use Kernel method + SVM and LSTM to recognize emotion.
 * **Unity**
     1.  State
         * Motivation：We want the state of process can dynamic transfer to another
-        * Solution：State can help us transfer the state of interactive process easily.
+        * Solution：State Pattern can help us manage the transition of state easily.
         * Consequense：
             * Easy to manage code in each state
             * Easy to change the transitions of each state
             * Need to control the amount of state, because each addtional state must add a new class
             * Hard to limit "How to use" in program, each developer of group must follow the state machine rules.
     2.  Singleton
-        * Motivation：We only need one instance, and can let whole system can visit it.
-        * Solution：Can let the logic more clearly, and don't need to care if the object is constructed. 
+        * Motivation：We only need one instance, which could let whole system can visit it.
+        * Solution：Let the logic more clearly, don't need to care if the object is constructed. 
         * Consequense：
-            * Provide only one method to create the sington object, avoid a lot of mess.
-            * More readable.
+            * Provide only one method to create the singleton object, avoid a lot of mess.
+            * Increase readability.
             * Increase debug difficulty, because everyone can access the object.
 
 
