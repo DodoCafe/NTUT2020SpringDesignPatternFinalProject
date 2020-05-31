@@ -80,6 +80,13 @@ We use Kernel method + SVM and LSTM to recognize emotion.
             * Easy to change the transitions of each state
             * Need to control the amount of state, because each addtional state must add a new class
             * Hard to limit "How to use" in program, each developer of group must follow the state machine rules.
+    2.  Singleton
+        * Motivation：We only need one instance, and can let whole system can visit it.
+        * Solution：Can let the logic more clearly, and don't need to care if the object is constructed. 
+        * Consequense：
+            * Provide only one method to create the sington object, avoid a lot of mess.
+            * More readable.
+            * Increase debug difficulty, because everyone can access the object.
 
 
 ### Contributions
