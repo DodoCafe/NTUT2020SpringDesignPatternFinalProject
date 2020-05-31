@@ -19,7 +19,7 @@ Our team name is [Dodo Cafe](https://github.com/DodoCafe).
 * [106590040 温致綱](https://github.com/gougon)
 * [106590048 陳風平](https://github.com/phogbinh)
 * [106590026 高楷杰](https://github.com/mdvv85009)
-* 106590018 廖彥澤 (Contract)
+* [106590018 廖彥澤](https://github.com/s88037zz) (Contract)
 
 ### Collaboration Story
 Currently N/A.
@@ -51,8 +51,8 @@ We use Socket to accomplish this feature. The server and client use particular m
 We use Kinect to get depth information and use median filter to reduce the noise.
 * **3D FER**<br>
 We use Kernel method + SVM and LSTM to recognize emotion.
-* **Resperry Pi Infrared Sensing**<br>
-* **Resperry Pi Pressure Sensing**<br>
+* **Raspberry Pi TCP Infrared Motion Detection**<br>
+We architect and implement infrared sensor multithreaded system which employs TCP socket to send sensor motion signal from Raspberry Pi to Unity desktop app.
 
 #### Design Patterns
 * **MVC**
@@ -71,6 +71,15 @@ We use Kernel method + SVM and LSTM to recognize emotion.
         * Consequense : 
             * Avoid busy waiting
             * Follow by MVC pattern, the observer need to go through multiple layer and generate readers and news
+* **Signal Receiving TCP Socket**<br>
+    1. State
+        * Motivation：The socket is designed to have two states - Connecting and Disconnecting - and thus needs a mechanism to handle state transitions
+        * Solution：State Pattern prevails the method of scattering state conditional statement across the class methods in tackling the proposed problem
+        * Consequence：
+            * It localizes state-specific behavior and partitions behavior for different
+states
+            * It makes state transitions explicit
+        * Class Diagram：![Signal Receiving TCP Socket Class Diagram](./image_class_diagram_signal_receiving_tcp_socket.jpg)
 * **Unity**
     1.  State
         * Motivation：We want the state of process can dynamic transfer to another
@@ -79,7 +88,7 @@ We use Kernel method + SVM and LSTM to recognize emotion.
             * Easy to manage code in each state
             * Easy to change the transitions of each state
             * Need to control the amount of state, because each addtional state must add a new class
-            * Hard to limit "How to use" in program, each developer of group must follow the state machine rules.
+            * Hard to limit "How to use" in program, each developer of group must follow the state machine rules
     2.  Singleton
         * Motivation：We only need one instance, which could let whole system can visit it.
         * Solution：Let the logic more clearly, don't need to care if the object is constructed. 
@@ -90,7 +99,10 @@ We use Kernel method + SVM and LSTM to recognize emotion.
 
 
 ### Contributions
-Currently N/A.
+#### 陳風平
+* Initiate collab with 3 Design Dept undergrads to form team of 6 creating an interactive experience themed home.
+* Architect and implement infrared sensor multithreaded system which employs TCP socket to send sensor motion signal from Raspberry Pi to Unity desktop app.
+* Technologies: C#, Python, UWP, MSTest, Unity 3D, Git, Asana.
 
 ### Source Codes
 * [DodoCafe](https://github.com/DodoCafe/DodoCafe)
