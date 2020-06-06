@@ -71,6 +71,28 @@ We architect and implement infrared sensor multithreaded system which employs TC
         * Consequense : 
             * Avoid busy waiting
             * Follow by MVC pattern, the observer need to go through multiple layer and generate readers and news
+        * Class Diagram：<br>
+            * Ring<br>
+            ![Android Ring Class Diagram](./image_class_diagram_Android_PhonograghObserver.png)<br><br>
+            * Phonograph<br>
+            ![Android Ring Class Diagram](./image_class_diagram_Android_PhonograghObserver.png)<br>
+* **3D FER**<br>
+    1. Repository
+        * Motivation : 
+        * Solution : 
+        * Consequence : 
+    2. Unit Of Work
+        * Motivation : 
+        * Solution : 
+        * Consequence : 
+        * Class Diagram : <br>
+        ![Android Ring Class Diagram](./image_class_diagram_3D FER_UOW_Repository.png)<br>
+    3. Pipe And Filter
+        * Motivation : 
+        * Solution : 
+        * Consequence : 
+        * Class Diagram : <br>
+        ![Android Ring Class Diagram](./image_class_diagram_3D FER_PipeAndFilter.png)<br>
 * **Signal Receiving TCP Socket**<br>
     1. State
         * Motivation：The socket is designed to have two states - Connecting and Disconnecting - and thus needs a mechanism to handle state transitions
