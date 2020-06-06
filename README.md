@@ -73,7 +73,7 @@ We architect and implement infrared sensor multithreaded system which employs TC
             * Follow by MVC pattern, the observer need to go through multiple layer and generate readers and news
         * Class Diagram：<br>
             * Ring<br>
-            ![Android Ring Class Diagram](./image_class_diagram_Android_PhonograghObserver.png)<br><br>
+            ![Android Ring Class Diagram](./image_class_diagram_Android_RingObserver.png)<br><br>
             * Phonograph<br>
             ![Android Ring Class Diagram](./image_class_diagram_Android_PhonograghObserver.png)<br>
 * **3D FER**<br>
