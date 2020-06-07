@@ -149,6 +149,10 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 * Architect and implement infrared sensor multithreaded system which employs TCP socket to send sensor motion signal from Raspberry Pi to Unity desktop app.
 * Technologies: C#, Python, UWP, MSTest, Unity 3D, Git, Asana.
 
+#### 高楷杰
+* Disign and implement main process logical architecture by using unity 3D.
+* Technologies: Unity 3D.
+
 ### Source Codes
 * [DodoCafe](https://github.com/DodoCafe/DodoCafe)
 * [DodoCafePluginTest](https://github.com/DodoCafe/DodoCafePluginTest)
