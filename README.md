@@ -117,7 +117,8 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
         * Consequence：
             * It localizes state-specific behavior and partitions behavior for different states
             * It makes state transitions explicit
-        * Class Diagram：![Signal Receiving TCP Socket Class Diagram](./image_class_diagram_signal_receiving_tcp_socket.jpg)
+        * Class Diagram：<br>![Signal Receiving TCP Socket Class Diagram](./image_class_diagram_signal_receiving_tcp_socket.jpg)
+        * Forces：<br>![Signal Receiving TCP Socket Forces](./image_forces_signal_receiving_tcp_socket.png)
 * **Unity**
     1.  State
         * Motivation：We want the state of process can dynamic transfer to another
