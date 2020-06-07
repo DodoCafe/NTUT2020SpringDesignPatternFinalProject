@@ -78,19 +78,32 @@ We architect and implement infrared sensor multithreaded system which employs TC
             ![Android Ring Class Diagram](./image_class_diagram_Android_PhonograghObserver.png)<br>
 * **3D FER**<br>
     1. Repository
-        * Motivation : 
-        * Solution : 
+        * Motivation : We have a lot of vertices, boundary vertices, and holes data. Sinve we are constantly changing these data during AFM algorithm, we hope that these data are shared so that datas will be changed while single component change these datas
+        * Solution : Repository pattern can see vertices, boundary vertices, and holes as different tables, and all components can access these tables
         * Consequence : 
+            * Encapsulate data so that client doesn't have to know the implementation details
+            * Make the components independent of each other, no need to transmit the data changed information
+            * Split domain model and data model
+            * Each access to data, we need to pass by repository, resulting in performance decreased
     2. Unit Of Work
-        * Motivation : 
-        * Solution : 
+        * Motivation : We already have different repositories, but we usually use different repositories when doing algorithms. When we modified single repository will affect other repositories
+        * Solution : Unit Of Work can be like Database, let us wrap the operations of operating different repository into one operation. We can implement the logic of operations by Unit Of Work so that client can only focus on the operation
         * Consequence : 
+            * Increase the reliability of the entire data system
+            * Decrease repetitive codes that affect each other (Repository)
+            * Can implement the rule of database (ex. cascade)
+            * Because we need to cross Unit Of Work and repository when we need to use data, it is difficult to optimize the operation of data
         * Class Diagram : <br>
         ![Android Ring Class Diagram](./image_class_diagram_3D FER_UOW_Repository.png)<br>
     3. Pipe And Filter
-        * Motivation : 
-        * Solution : 
+        * Motivation : We have different algorithm for the face preprocessing (even some of them are the same algorithm family), and we need to combination different algorithms when training the model to find the best solution. Therefore, we hope to replace the algorithm easily and don't need to pay a lot of effort
+        * Solution : Pipe And Filter can split different algorithms, and use pipe to determine algorithm steps
         * Consequence : 
+            * Due to the large amount of data to be trained, if it is found to be too slow in the future, we can easily change it to parallel computing
+            * Easy to understand each step of algorithm
+            * Replace algorithm is easy because they have the same interface
+            * Because of the existence of pipe, it increases the time to process single mesh
+            * Error handling and rescovery is difficult to implement
         * Class Diagram : <br>
         ![Android Ring Class Diagram](./image_class_diagram_3D FER_PipeAndFilter.png)<br>
 * **Signal Receiving TCP Socket**<br>
