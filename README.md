@@ -21,9 +21,6 @@ Our team name is [Dodo Cafe](https://github.com/DodoCafe).
 * [106590026 高楷杰](https://github.com/mdvv85009)
 * [106590018 廖彥澤](https://github.com/s88037zz) (Contract)
 
-### Collaboration Story
-Currently N/A.
-
 ### Interactive Experiences
 Our main presentation method is to use the projection screen to project 3 pictures, just like a gallery.
 * **First picture**<br>
