@@ -98,8 +98,7 @@ We architect and implement infrared sensor multithreaded system which employs TC
         * Motivation：The socket is designed to have two states - Connecting and Disconnecting - and thus needs a mechanism to handle state transitions
         * Solution：State Pattern prevails the method of scattering state conditional statement across the class methods in tackling the proposed problem
         * Consequence：
-            * It localizes state-specific behavior and partitions behavior for different
-states
+            * It localizes state-specific behavior and partitions behavior for different states
             * It makes state transitions explicit
         * Class Diagram：![Signal Receiving TCP Socket Class Diagram](./image_class_diagram_signal_receiving_tcp_socket.jpg)
 * **Unity**
@@ -111,6 +110,8 @@ states
             * Easy to change the transitions of each state
             * Need to control the amount of state, because each addtional state must add a new class
             * Hard to limit "How to use" in program, each developer of group must follow the state machine rules
+        * Class Diagram : <br>
+        ![Unity GameState Class Diagram](./image_class_diagram_Unity_GameState.png)<br>
     2.  Singleton
         * Motivation：We only need one instance, which could let whole system can visit it.
         * Solution：Let the logic more clearly, don't need to care if the object is constructed. 
@@ -118,6 +119,8 @@ states
             * Provide only one method to create the singleton object, avoid a lot of mess.
             * Increase readability.
             * Increase debug difficulty, because everyone can access the object.
+        * Class Diagram : <br>
+        ![Unity UItexture Class Diagram](./image_class_diagram_Unity_UItextureSingleton.png)<br>
 
 
 ### Contributions
