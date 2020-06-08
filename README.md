@@ -110,7 +110,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
             * Error handling and rescovery is difficult to implement
         * Class Diagram : <br>
         ![Android Ring Class Diagram](./image_class_diagram_3D FER_PipeAndFilter.png)<br>
-    4.Strategy
+    4. Strategy
         * Motivation : We would try using the different algorithm in feature selection. We need to let object with more flexible in order to compare the effect in each algorithm.
         * Soution : We can let object have abilty of alternative in a member function by using Strategy pattern.
         * Consequence:
