@@ -58,6 +58,18 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 * **Raspberry Pi TCP Infrared Motion Detection**<br>
     We architect and implement infrared sensor multithreaded system which employs TCP socket to send sensor motion signal from Raspberry Pi to Unity desktop app.
 
+#### Demo
+* Dodo Gallery - Progress<br>
+    https://www.youtube.com/watch?v=awNf7QXRdYw
+* Raspberry Pi TCP Infrared Motion Detection with Unity<br>
+    https://www.youtube.com/watch?v=_uFyIu8G5lA&feature=youtu.be
+* Kinect Depth Trigger - Unfilter
+    ![Kinect Depth Trigger Unfilter Demo](./image_demo_kinect_depth_trigger-unfilter.png)<br>
+* Kinect Depth Trigger - Untrigger
+    ![Kinect Depth Trigger Unfilter Demo](./image_demo_kinect_depth_trigger-untrigget.png)<br>
+* Kinect Depth Trigger - Unfilter
+    ![Kinect Depth Trigger Unfilter Demo](./image_demo_kinect_depth_trigger-trigget.png)<br>
+
 #### Design Patterns
 * **MVC**
     * We use this pattern in whole project
