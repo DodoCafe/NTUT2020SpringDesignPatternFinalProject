@@ -133,6 +133,8 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
             * It offers an alternative to conditional statements for selecting desired behavior.
             * The client need to know how Stragegy differ before it select the appropriate one.
             * Strategies increase the number of onjects in an application.
+        * Class Diagram : <br>
+        ![Android Ring Class Diagram](./image_class_diagram_3D FER_Strategy.png)<br>
     * Forces：<br>![3D FER Force diagram](./image_force_3D FER.png)
 
 * **Signal Receiving TCP Socket**<br>
