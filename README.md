@@ -148,6 +148,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
             * Increase debug difficulty, because everyone can access the object.
         * Class Diagram : <br>
         ![Unity UItexture Class Diagram](./image_class_diagram_Unity_UItextureSingleton.png)<br>
+    * Forces：<br>![Unity Force diagram](./image_forces_unity)
 
 
 ### Contributions
