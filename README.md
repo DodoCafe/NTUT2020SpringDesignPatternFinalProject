@@ -22,7 +22,7 @@ Our team name is [Dodo Cafe](https://github.com/DodoCafe).
 * [106590018 廖彥澤](https://github.com/s88037zz) (Contract)
 
 ### Interactive Experiences
-Our main presentation method is to use the projection screen to project 3 pictures, just like a gallery.
+Our main presentation method is to use the projection screen to project 4 pictures, just like a gallery.
 * **First picture**<br>
     When user walk close to the picture, the cellphone will start ring. Then user can pick up the cellphone and listen to the phonograph.  When the phonograph finished, the picture enter standby screen.
 * **Second picture**<br>
