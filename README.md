@@ -66,9 +66,11 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 * Kinect Depth Trigger - Unfilter
     ![Kinect Depth Trigger Unfilter Demo](./image_demo_kinect_depth_trigger-unfilter.png)<br>
 * Kinect Depth Trigger - Untrigger
-    ![Kinect Depth Trigger Unfilter Demo](./image_demo_kinect_depth_trigger-untrigget.png)<br>
+    ![Kinect Depth Trigger Untrigger Demo](./image_demo_kinect_depth_trigger-untrigget.png)<br>
 * Kinect Depth Trigger - Unfilter
-    ![Kinect Depth Trigger Unfilter Demo](./image_demo_kinect_depth_trigger-trigget.png)<br>
+    ![Kinect Depth Trigger Trigger Demo](./image_demo_kinect_depth_trigger-trigget.png)<br>
+* 3D FER - Preprocessing<br>
+    ![3D FER Preprocessing Demo](./image_demo_3D_FER_preprocessing.png)<br>
 
 #### Design Patterns
 * **MVC**
