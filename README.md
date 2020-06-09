@@ -80,6 +80,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
             ![Android Ring Class Diagram](./image_class_diagram_Android_RingObserver.png)<br><br>
             * Phonograph<br>
             ![Android Ring Class Diagram](./image_class_diagram_Android_PhonograghObserver.png)<br>
+    * Forces：<br>![Android Force diagram](./image_force_android.png)
 * **3D FER**<br>
     1. Repository
         * Motivation : We have a lot of vertices, boundary vertices, and holes data. Sinve we are constantly changing these data during AFM algorithm, we hope that these data are shared so that datas will be changed while single component change these datas
@@ -118,6 +119,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
             * It offers an alternative to conditional statements for selecting desired behavior.
             * The client need to know how Stragegy differ before it select the appropriate one.
             * Strategies increase the number of onjects in an application.
+    * Forces：<br>![3D FER Force diagram](./image_force_3D FER.png)
 
 * **Signal Receiving TCP Socket**<br>
     1. State
