@@ -186,6 +186,15 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 * [DodoCafe](https://github.com/DodoCafe/DodoCafe)
 * [DodoCafePluginTest](https://github.com/DodoCafe/DodoCafePluginTest)
 * [Raspberry Pi TCP Infrared Motion Detection](https://github.com/DodoCafe/raspberry-pi-tcp-infrared-motion-detection)
+* [DodoGalleryUnity](https://github.com/mdvv85009/DodoGalleryUnity)
+    * State
+        * ISceneState.cs
+        * SceneStateController.cs
+        * FirstSceneState.cs
+        * SecondSceneState.cs
+        * ThirdSceneState.cs
+    * Singleton
+        * UITexture.cs   
 * [Android communication with Unity](https://github.com/Gougon-Side-Project/Android-DodoCagePhonograph)
     * Observer
         * IObserver.java
