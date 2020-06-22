@@ -94,7 +94,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 * Class Diagram：<br>
 ![Android Observer Class Diagram](./image_class_diagram_Android_observer.png)<br><br>
 ### `3D FER`<br>
-#### Repository
+#### Repository (Patterns of Enterprise Application Architecture)
 * Motivation : We have a lot of vertices, boundary vertices, and holes data. Sinve we are constantly changing these data during AFM algorithm, we hope that these data are shared so that datas will be changed while single component change these datas
 * Solution : Repository pattern can see vertices, boundary vertices, and holes as different tables, and all components can access these tables
 * Consequence : 
@@ -104,7 +104,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
     * Each access to data, we need to pass by repository, resulting in performance decreased
 * Class Diagram : <br>
 ![Android Ring Class Diagram](./image_class_diagram_3D FER_Repository.png)<br>
-#### Unit Of Work
+#### Unit Of Work (Patterns of Enterprise Application Architecture)
 * Motivation : We already have different repositories, but we usually use different repositories when doing algorithms. When we modified single repository will affect other repositories
 * Solution : Unit Of Work can be like Database, let us wrap the operations of operating different repository into one operation. We can implement the logic of operations by Unit Of Work so that client can only focus on the operation
 * Consequence : 
