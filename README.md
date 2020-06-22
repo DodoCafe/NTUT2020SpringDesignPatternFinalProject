@@ -186,3 +186,30 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 * [DodoCafe](https://github.com/DodoCafe/DodoCafe)
 * [DodoCafePluginTest](https://github.com/DodoCafe/DodoCafePluginTest)
 * [Raspberry Pi TCP Infrared Motion Detection](https://github.com/DodoCafe/raspberry-pi-tcp-infrared-motion-detection)
+* [Android communication with Unity](https://github.com/Gougon-Side-Project/Android-DodoCagePhonograph)
+    * Observer
+        * IObserver.java
+        * ISubject.java
+        * Client.java
+        * MainActivity.java
+        * MainPM.java
+        * MusicPlayer.java
+        * TimeHandler.java
+        * TimeRunnable.java
+* [3D FER](https://github.com/3D-face-recognition/3D-Face-Recongnition)<br>
+    * Repository
+        * interface_repository.py
+        * vertex_repository
+        * boundary_vertex_repository.py
+        * hole_repository.py
+    * Unit of Work
+        * unit_of_work.py
+    * Pipe and Filter
+        * interface_pipe_and_sink.py
+        * preprocessing_pipe.py
+        * preprocessing_sink.py
+        * interface_precessing_filter.py
+        * taubin_smoothing_filter.py
+        * humphrey_smoothing_filter.py
+        * z_circle_cropping_filter.py
+        * afm_filling_hole_filter.py
