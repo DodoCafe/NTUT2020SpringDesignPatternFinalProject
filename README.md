@@ -73,6 +73,8 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 ![3D FER Preprocessing Demo](./image_demo_3D_FER_preprocessing.png)<br>
 
 ## Design Patterns
+### Force
+![Force diagram](./image_force.png)
 ### MVC
 * We use this pattern in whole project
 * Motivation : We want to decoupling classes, keep code clean, and easy to read
@@ -90,11 +92,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
     * Avoid busy waiting
     * Follow by MVC pattern, the observer need to go through multiple layer and generate readers and news
 * Class Diagram：<br>
-    * Ring<br>
-    ![Android Ring Class Diagram](./image_class_diagram_Android_RingObserver.png)<br><br>
-    * Phonograph<br>
-    ![Android Ring Class Diagram](./image_class_diagram_Android_PhonograghObserver.png)<br>
-* Forces：<br>![Android Force diagram](./image_force_android.png)
+![Android Observer Class Diagram](./image_class_diagram_Android_observer.png)<br><br>
 ### `3D FER`<br>
 #### Repository
 * Motivation : We have a lot of vertices, boundary vertices, and holes data. Sinve we are constantly changing these data during AFM algorithm, we hope that these data are shared so that datas will be changed while single component change these datas
@@ -104,6 +102,8 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
     * Make the components independent of each other, no need to transmit the data changed information
     * Split domain model and data model
     * Each access to data, we need to pass by repository, resulting in performance decreased
+* Class Diagram : <br>
+![Android Ring Class Diagram](./image_class_diagram_3D FER_Repository.png)<br>
 #### Unit Of Work
 * Motivation : We already have different repositories, but we usually use different repositories when doing algorithms. When we modified single repository will affect other repositories
 * Solution : Unit Of Work can be like Database, let us wrap the operations of operating different repository into one operation. We can implement the logic of operations by Unit Of Work so that client can only focus on the operation
@@ -113,7 +113,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
     * Can implement the rule of database (ex. cascade)
     * Because we need to cross Unit Of Work and repository when we need to use data, it is difficult to optimize the operation of data
 * Class Diagram : <br>
-![Android Ring Class Diagram](./image_class_diagram_3D FER_UOW_Repository.png)<br>
+![Android Ring Class Diagram](./image_class_diagram_3D FER_UOW.png)<br>
 #### Pipe And Filter
 * Motivation : We have different algorithm for the face preprocessing (even some of them are the same algorithm family), and we need to combination different algorithms when training the model to find the best solution. Therefore, we hope to replace the algorithm easily and don't need to pay a lot of effort
 * Solution : Pipe And Filter can split different algorithms, and use pipe to determine algorithm steps
@@ -135,7 +135,6 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
     * Strategies increase the number of onjects in an application.
 * Class Diagram : <br>
 ![Android Ring Class Diagram](./image_class_diagram_3D FER_Strategy.png)<br>
-* Forces：<br>![3D FER Force diagram](./image_force_3D FER.png)
 
 ### `Signal Receiving TCP Socket`<br>
 #### State
@@ -145,7 +144,6 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
     * It localizes state-specific behavior and partitions behavior for different states
     * It makes state transitions explicit
 * Class Diagram：<br>![Signal Receiving TCP Socket Class Diagram](./image_class_diagram_signal_receiving_tcp_socket.jpg)
-* Forces：<br>![Signal Receiving TCP Socket Forces](./image_forces_signal_receiving_tcp_socket.png)
 ### `Unity`
 #### State
 * Motivation：We want the state of process can dynamic transfer to another
@@ -166,7 +164,6 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
     * Increase debug difficulty, because everyone can access the object.
 * Class Diagram : <br>
 ![Unity UItexture Class Diagram](./image_class_diagram_Unity_UItextureSingleton.png)<br>
-* Forces：<br>![Unity Force diagram](./image_forces_unity.png)
 
 
 # Contributions
@@ -178,6 +175,12 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 ### 高楷杰
 * Disign and implement main process logical architecture by using unity 3D.
 * Technologies: Unity 3D.
+
+### 溫致綱
+* Implement socket communication between Android & Unity
+* Implement Kinect depth trigger
+* Participate in 3D FER and implement preprocessing
+* Technologies: C#, Java, Python, Socket, Kinect.
 
 ## Source Codes
 * [DodoCafe](https://github.com/DodoCafe/DodoCafe)
