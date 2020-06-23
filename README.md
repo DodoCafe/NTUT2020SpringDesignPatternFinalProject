@@ -144,6 +144,7 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
     * It localizes state-specific behavior and partitions behavior for different states
     * It makes state transitions explicit
 * Class Diagram：<br>![Signal Receiving TCP Socket Class Diagram](./image_class_diagram_signal_receiving_tcp_socket.jpg)
+* Object Diagram：<br>![Signal Receiving TCP Socket Object Diagram](./image_object_diagram_signal_receiving_tcp_socket.jpg)
 ### `Unity`
 #### State
 * Motivation：We want the state of process can dynamic transfer to another
@@ -184,6 +185,11 @@ Our main platform is PC and other device(pressure detect device, cellphone, infr
 
 ## Source Codes
 * [DodoCafe](https://github.com/DodoCafe/DodoCafe)
+    * State
+        * CSignalReceivingTcpSocket.cs
+        * ISignalReceivingTcpSocketState.cs
+        * CSignalReceivingTcpSocketConnectingState.cs
+        * CSignalReceivingTcpSocketDisconnectingState.cs
 * [DodoCafePluginTest](https://github.com/DodoCafe/DodoCafePluginTest)
 * [Raspberry Pi TCP Infrared Motion Detection](https://github.com/DodoCafe/raspberry-pi-tcp-infrared-motion-detection)
 * [DodoGalleryUnity](https://github.com/mdvv85009/DodoGalleryUnity)
